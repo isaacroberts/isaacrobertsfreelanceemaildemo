@@ -1,6 +1,8 @@
 # app_launch_demo
 
-Demo app - built in 1 day to show off quick-to-market turnaround. This wouldn't be done enough to release as an MVP, since there's no backend, and it's only one page, but it's a proof of concept of what a quickly built app can look like.
+https://isaacroberts.app
+
+Demo app - built in a day to show off my fast-to-market turnaround. This app is only one page, and has no backend, but is a proof of concept of a quickly-built app that still looks good. 
 
 ## Folders:
 
