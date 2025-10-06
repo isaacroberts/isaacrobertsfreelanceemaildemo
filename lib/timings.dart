@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+// I think this has a bunch of sub-dependencies 
+import 'package:url_launcher/url_launcher_string.dart' deferred as url_launcher;
 
 ///Copy to clipboard & show standardized snackbar
 ///Trying to copy null shows "No text" to user
@@ -66,7 +67,8 @@ Future<bool> openLink(String? link, BuildContext context) async {
   if (link == null) {
     return false;
   }
-  bool canOpen = await canLaunchUrlString(link);
+  await url_launcher.loadLibrary();
+  bool canOpen = await url_launcher.canLaunchUrlString(link);
   ValueNotifier<bool> shouldOpen = ValueNotifier(canOpen);
   if (context.mounted) {
     ScaffoldMessenger.maybeOf(context)?.showSnackBar(
@@ -84,7 +86,7 @@ Future<bool> openLink(String? link, BuildContext context) async {
 
   if (context.mounted) {
     if (shouldOpen.value) {
-      launchUrlString(link, mode: LaunchMode.inAppBrowserView);
+      url_launcher.launchUrlString(link, mode: url_launcher.LaunchMode.inAppBrowserView);
       return true;
     }
   }

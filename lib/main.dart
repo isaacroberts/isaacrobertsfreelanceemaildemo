@@ -53,7 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         leading: MyDrawerButton(key: Key('myDrawerButton')),
         backgroundColor: Theme.of(context).colorScheme.surface,
-        title: Text("Cold Email"),
+        title: Text("ColdEmail.ly"),
+        centerTitle: true,
       ),
       body: EmailLayout(key: Key('emlLayout')),
 

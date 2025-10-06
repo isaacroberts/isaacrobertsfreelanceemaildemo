@@ -256,7 +256,7 @@ That's why in my podcast, 'Masters of Scale', I advocated for building software 
 
   _Message(
     EmailType.mine,
-    'Thank Google for Flutter',
+    'Flutter is an excellent framework',
     "The service that I am offering would not be possible without the Flutter framework. The Flutter framework was built by Google to help Android steal market share from Apple, and they had the time, professionalism, and management support to do a really good job.\n\nGoogle has some really smart people, and they did a really good job with it. Customization is built into the design philosophy. The components work under every circumstance. Null safety is genius and intuitive.\n\nIn 3 years of using Flutter, I've never seen it get \"haunted\" like most frameworks do. I once had a client who made me use the Kivvy Python framework. Kivvy couldn't register a single button click on Linux, flickered nonstop, and had its own paradigm for button callbacks. I begged the client to let me use a different framework, and he got insulted and stopped working with me. I assume his father invented the it.\n\nWhen I was working in JUCE, for music production, I spent a week trying to figure out why melodies were playing at double speeds. Finally, I discovered that FLStudio used its own (incorrect) time signatures, storing 4/4 time as 4/16. I then had to guess and check until I figured out what idiomatic math the FLStudio developer made up.\n\nThere is no such nonsense in Flutter. Google has the utmost professionalism, care, and attention to detail. On our projects, we will use the Flutter framework, and we will have 95% less bugs because of it.",
   ),
   _Message(
@@ -264,11 +264,11 @@ That's why in my podcast, 'Masters of Scale', I advocated for building software 
     "I'm about to rob a bank!!!",
     "Big companies want 50,000\$ just to start! I know that my app could make that once it's built, but I need the revenue first!!!\n\nWho set up this system??? If our country really loves small business owners, why don't they offer grants? I went to a bank for a small business loan, and they called me a hick for not living in California!\n\n If you know of a way I could get an app built for a tenth of that, that would really help.",
   ),
-  _Message(
-    EmailType.friend,
-    "Will they let me skip the extras?",
-    "I went to a development firm, and they said I had to pay for GDPR compliance. I don't even know what that is!\n\nThis feels like Big Government busting my business! I'm a small business owner! Those rules were meant for large business owners!\n\nLook, I just need an app where my customers can tell me where to show up, and what with! I have 4 different sets of tools, and I need to know which one I'm bringing to the job site. Is that so wrong, if it doesn't have a cookie popup? What is a cookie?",
-  ),
+  // _Message(
+  //   EmailType.friend,
+  //   "Will they let me skip the extras?",
+  //   "I went to a development firm, and they said I had to pay for GDPR compliance. I don't even know what that is!\n\nThis feels like Big Government busting my business! I'm a small business owner! Those rules were meant for large business owners!\n\nLook, I just need an app where my customers can tell me where to show up, and what with! I have 4 different sets of tools, and I need to know which one I'm bringing to the job site. Is that so wrong, if it doesn't have a cookie popup? What is a cookie?",
+  // ),
 ];
 
 const List<String> emailFroms = [
